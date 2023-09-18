@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,21 @@
     <script src="js/get.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
+
 <body>
     <main class="wrapper container">
         <h1>Fetch Github with JavaScript exercise</h1>
+        <p id="instructions">Submit a Github username, a search will be performed on the Github database</p>
         <form id="gitHubForm" class="form">
-            <button class="button is-primary" type="submit">Click Here</button>
+            <input type="text" id="newUser" placeholder="Github username" />
+            <button class="button is-primary" type="submit" id="btn1">Click Here</button>
         </form>
+        <p>Name: <span id="returnName">Name is returned here</span></p>
+        <p>Username: <span id="returnUserName">Username is returned here</span></p>
+        <p>Public Repositories: <span id="returnRepos">Public Repositories are returned here</span></p>
+        <p>Followers: <span id="returnFollowers">Followers will return here</span></p>
+        <p>Following: <span id="returnFollowing">Following will return here</span></p>
     </main>
 </body>
+
 </html>

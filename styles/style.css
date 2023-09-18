@@ -15,6 +15,13 @@ html {
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -22,3 +29,4 @@ form {
     align-items: center;
     max-width: 65ch;
 }
+
