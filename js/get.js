@@ -19,11 +19,13 @@ async function getWithAwait(url) {
 
 function displayInfo(a) {
     console.log(a);
+    const userImage = document.getElementById('userImage');
     const selectNameEl = document.getElementById('returnName');
     const selectUserNameEl = document.getElementById('returnUserName');
     const selectReposEl = document.getElementById('returnRepos');
     const selectFollowersEl = document.getElementById('returnFollowers');
     const selectFollowingEl = document.getElementById('returnFollowing');
+    userImage.src = a.avatar_url;
     selectNameEl.innerText = a.name;
     selectUserNameEl.innerText = a.login;    
     selectReposEl.innerText = a.public_repos;
