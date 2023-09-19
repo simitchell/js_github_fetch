@@ -4,10 +4,8 @@ async function getWithAwait(url) {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        // CALL THE FUNCTION TO DISPLAY DATA ON SCREEN BC DATA LIVES HERE IN SCOPE
-
+        // CALLING DISPLAYINFO FUNCTION
         displayInfo(data);
-
         return data;
     } catch (error) {
         console.error('Error In Try/Catch: ', error);
