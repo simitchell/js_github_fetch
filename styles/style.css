@@ -26,7 +26,12 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: .8rem;
     align-items: center;
     max-width: 65ch;
+    
 }
 
+.infoFields {
+    text-align: left;
+}

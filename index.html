@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS GitHub Fetch</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" /> -->
     <script src="js/get.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <main class="wrapper container">
-        <h1>Fetch Github with JavaScript exercise</h1>
-        <p id="instructions">Submit a Github username, a search will be performed on the Github database</p>
+        <h1 class="title">Fetch Github with JavaScript exercise</h1>
+        <p id="instructions" class="subtitle">Submit a Github username, a search will be performed on the Github database</p>
         <form id="gitHubForm" class="form">
             <input type="text" id="newUser" placeholder="Github username" />
             <button class="button is-primary" type="submit" id="btn1">Click Here</button>
         </form>
-        <img id="userImage"/>
-        <p>Name: <span id="returnName">Name is returned here</span></p>
-        <p>Username: <span id="returnUserName">Username is returned here</span></p>
-        <p>Public Repositories: <span id="returnRepos">Public Repositories are returned here</span></p>
-        <p>Followers: <span id="returnFollowers">Followers will return here</span></p>
-        <p>Following: <span id="returnFollowing">Following will return here</span></p>
+        <div class="card">
+            <img id="userImage" class="card-image"/>
+            <div class="infoFields card content">
+                <p ><strong>Name: </strong><span><strong id="returnName"></strong></span></p>
+                <p><strong>Username: </strong><span id="returnUserName"></span></p>
+                <p><strong>Public Repositories: </strong><span id="returnRepos"></span></p>
+                <p><strong>Followers: </strong><span id="returnFollowers"></span></p>
+                <p><strong>Following: </strong><span id="returnFollowing"></span></p>
+            </div>
+        </div>
     </main>
 </body>
 
